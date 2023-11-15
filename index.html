@@ -16,6 +16,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     <script src="app.js"></script>
+    <!-- <script src="app_teste.js"></script> -->
 
 	</head>
 
@@ -123,38 +124,20 @@
       Launch demo modal
     </button> -->
     
-    <!-- Modal -->
-    <div class="modal fade" id="erroGravacao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header text-danger">
-            <h1 class="modal-title fs-5" id="exampleModalLabel"> Erro na Gravação </h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Existem campos obrigadorios que não foram preenchidos
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Voltar e corrigir</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- sucesso -->
 
-    <div class="modal fade" id="sucessogravado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalRegistraDespesa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header text-success">
-            <h1 class="modal-title fs-5" id="exampleModalLabel"> Sucesso </h1>
+          <div id="modal_titulo_div">
+            <h1 class="modal-title fs-5" id="modal_titulo"> Sucesso </h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body" id="modal_descricao">
             Despesa foi cadastrada com Sucesso!
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Voltar</button>
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal" id="modal_btn">Voltar</button>
           </div>
         </div>
       </div>
